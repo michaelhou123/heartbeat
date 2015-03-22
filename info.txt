@@ -1,0 +1,11 @@
+--How to use it
+*) DB
+Execute db_heartbeat.sql
+
+*) Server
+Configure the DB connections in hearbeat_server.c
+
+*) Client
+
+*) Web
+Install PHP environment
