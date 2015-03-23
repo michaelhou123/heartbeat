@@ -163,10 +163,10 @@ void produce(struct queue *q){
   }
   
   int optval=1;
-	if(setsockopt(server_fd,SOL_SOCKET,SO_REUSEADDR,&optval,sizeof(optval))==-1){
-	  logger(stderr,"Error invoke setsockopt(): %s\n",strerror(errno));
-		exit(-1);
-	}
+  if(setsockopt(server_fd,SOL_SOCKET,SO_REUSEADDR,&optval,sizeof(optval))==-1){
+    logger(stderr,"Error invoke setsockopt(): %s\n",strerror(errno));
+    exit(-1);
+  }
   
   struct sockaddr_in server_addr;
   bzero(&server_addr,sizeof(server_addr));
